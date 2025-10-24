@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>farmers Scams</title>
+    <style>
+      body{
+        background-color:  rgb(226, 235, 238);
+      }
+      /* .s {
+        height: 250px;
+        width: 100vw    ;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 50p;
+      } */
+      .s{
+        display: flex;
+        padding: 80px 100px;  
+      }
+      .k{
+        margin-left: 100px;
+      }
+      .q img {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 10%;
+      }
+      .img1 img{
+        height: 450px;
+        width: 100%;
+      }
+      .nav-bar{
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-evenly;
+    background-color: #1b2430;
+    padding-bottom: 25px;
+}
+.nav-bar .profile button{
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 19px;
+    background-color: #1b2430;
+
+}
+.nav-bar .nav-ele button:hover{
+    background-color:  #1b2430;
+    border: 2px green ;
+    color:  #17cf97;
+}
+.nav-bar .profile a{
+    text-decoration: none;
+    color: #17cf97;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #1b2430;
+}
+.favicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.favicon img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.nav-ele{
+    width: 600px;
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+input{
+    width: 200px;
+    height: 40px;
+}
+.search button{
+    height: 46px;
+    width: 30px;
+    background-color: #ddd;
+}
+.nav-ele button{
+    width: 200px;
+    height: 50px;
+    background-color: #1b2430;
+    border:none;
+    color: #ddd;
+    border-radius: 19px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav-ele button a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+.nav-ele button a:hover{
+    color: #17cf97;
+}
+.nav-ele button a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+
+}
+.nav-ele button a:hover::after{
+    width: 100%;
+    color: #17cf97;
+}
+.but{
+  display: flex;
+  margin-left: 100px;
+  margin-top: 100px;
+  gap: 20px;
+}
+.but button{
+  font-size: 20px;
+  width: 110px;
+  color: #ddd;
+  border-radius: 10%;
+  background-color: rgb(62, 155, 237);
+  cursor: pointer;
+}
+.but button:hover{
+  background-color: aqua;
+}
+.head{
+  color: yellowgreen;
+  margin-left: 100px;
+}
+.srid img{
+  width: 100%;
+
+}
+h1{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+    </style>
+    <script>
+      window.onload=function(){
+      const ima=document.getElementById('image1');
+        const random=["backpic.png","logo21.png","logo22.png","logo23.png","logo24.png"];
+        setInterval(function(){const length=Math.floor(Math.random()*random.length);
+        ima.src=random[length];},1000);}
+    </script>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <a href="#" class="favicon" style="text-decoration: none;"><img src="logo.jpg"> <button style="font-size: 25px;font-weight: 900; border: none;background-color: #1b2430;text-decoration: none; color: #17cf97;cursor: pointer;">AgriLow</button></a>
+      <div class="nav-ele">
+          <button><a href="index.html">Home</a></button>
+          <button><a href="scams.html">News</a></button>
+          <button><a href="#y">Reviews</a></button>
+          <button><a href="#">Expenses</a></button>
+      </div>
+      <div class="search"><input class="input"placeholder="Enter the scams details" ><i class="fa fa-search"></i></div>
+      <div class="profile"><button><a href="login.html" style="background-color: #1b2430;">login</a></button></div>
+  </div>
+  <img src="backpic.png" alt="" width="100%" height="500px" class="srid" id="image1">
+  <div class="but">
+    <button>National</button>
+    <button>state</button>
+    <button>Event</button>
+    <button>Bussiness idea</button>
+    <button>Spice Desk</button>
+  </div>
+  <div class="head">
+    <h1 class="h1" style="font-size: 65px;">Latest  Article</h1><hr class="h1">
+  </div>
+    <div class="s">
+      <div class="q">
+        <img src="seed.jpg" />
+      </div>
+      <div class="k">
+        <h1>Fake Seed and Fertilizer Scams</h1>
+        <p>
+          Farmers are sold low-quality or counterfeit seeds, fertilizers, or
+          pesticides labeled as premium brands.
+        </p>
+        <p>
+          <i>Impact</i>: Poor crop yield, financial loss, and long-term soil
+          damage.
+        </p>
+      </div>
+    </div>
+    <!-- hi -->
+
+    <div class="s">
+      <div class="q">
+        <img src="loan.jpg" />
+      </div>
+      <div class="k">
+        <h1>Loan Fraud / Fake Loan Agents</h1>
+        <p>
+          cammers pose as bank agents offering easy loans, collect documents and
+          fees, and disappear.
+        </p>
+        <p>
+          <i>Impact</i>: Farmers lose personal data and money, and may become
+          victims of identity theft.
+        </p>
+      </div>
+    </div>
+    <!-- hi -->
+    <div class="s">
+      <div class="q">
+        <img src="subsidy.jpg" />
+      </div>
+      <div class="k">
+        <h1>Subsidy Scam</h1>
+        <p>
+          Middlemen or officials siphon off government subsidies meant for
+          farmers.
+        </p>
+        <p>
+          <i>Impact</i>: Farmers do not receive the full subsidy or any benefit
+          at all
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

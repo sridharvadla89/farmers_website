@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables Information</title>
+    <link rel="stylesheet" href="vegetabe.css">
+</head>
+    <header>
+        <div class="nav-bar">
+            <a href="#" class="favicon" style="text-decoration: none;"><img src="logo.jpg"> <button style="font-size: 25px;font-weight: 900; border: none;background-color: #1b2430;text-decoration: none; color: #17cf97;cursor: pointer;">AgriLow</button></a>
+            <div class="nav-ele">
+                <button><a href="index.html">Home</a></button>
+                <button><a>News</a></button>
+                <button><a>Reviews</a></button>
+                <button><a>Expenses</a></button>
+            </div>
+            <div class="search"><input class="input" value="search" placeholder="Enter the product details" ><i class="fa fa-search"></i></div>
+            <div class="profile"><button><a href="login.html">login</a></button></div>
+        </div>
+    </header>
+        <div class="item" >
+            <img src="cat1.jpg" alt="Vegetables" title="Vegetables" width="1500px" height="500px" id="image1">
+        </div>
+        <h2 class="ss">Vegetables Information</h2>
+        <div class="categories-container">
+        <div class="box">
+            <img src="tomato.jpg" alt="Tomato">
+            <h3>Tomato</h3>
+        <h2 style="color: yellowgreen; text-decoration: none;">RS:20/perkg</h2>
+            <p>Tomatoes are rich in vitamins C and K, and they are great for heart health. its rate is :200rs/kg.</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="beetroot.jpg" alt="Beetroot">
+            <h3>Beetroot</h3>
+        <h2 style="color: yellowgreen; text-decoration: none;">RS:40/perkg</h2>
+            <p>Beetroot is packed with essential nutrients, including fiber, folate, and iron.its rate is :200rs/kg.</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="carrot.jpg" alt="Carrot">
+            <h3>Carrot</h3>
+        <h2 style="color: yellowgreen; text-decoration: none;">RS:24/perkg</h2>
+            <p>Carrots are high in beta-carotene, which is converted into vitamin A for good vision. its rate is :200rs/kg.</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+    <script>
+        const ima=document.getElementById('image1');
+          const random=["vegi1.jpg","vegi2.jpg","cat1.jpg"];
+          setInterval(function(){const length=Math.floor(Math.random()*random.length);
+          ima.src=random[length];},1000);
+    </script>
+</body>
+</html>
+

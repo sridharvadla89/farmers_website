@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriLow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="logo.jpg" class="favicon" style="text-decoration: none;"><img src="logo.jpg"> <button style="font-size: 25px;font-weight: 900; border: none;background-color:  #1b2430;text-decoration: none; color: #17cf97;cursor: pointer;">AgriLow</button></a>
+        <div class="nav-ele">
+            <button><a href="#">Home</a></button>
+            <button><a href="scams.html">News</a></button>
+            <button><a href="#y">Reviews</a></button>
+            <button><a href="expenses.html">Product details</a></button>
+        </div>
+        <div class="search"><input class="input"placeholder="Enter the product details" ><button><i class="fa fa-search"></i></button></div>
+        <div class="profile"><button><a href="login.html" style="background-color: #1b2430;">login</a></button></div>
+    </div>
+    <img src="backpic.png" width="100%" height="430px" id="image1">
+    <strong style="font-size: 80px; margin-left: 560px;" class="cat8">Categories</strong>
+    <hr>
+    
+    <div class="categories-container">
+        <a href="woqo.html">
+        <div class="item">
+            <img src="cat1.jpg" alt="Vegetables" title="Vegetables"></a>
+            <p style="font-size:40px; font-weight:200;">Vegetables</p>
+        </div>
+        <a href="fruits.html">
+        <div class="item"  style="cursor: pointer;">
+            <img src="cat2.jpg" alt="Fruits" title="Fruits">
+        </a>
+            <p style="font-size:40px; font-weight:200;">Fruits</p>
+        </div>
+        <a href="pulses.html">
+        <div class="item">
+            <img src="cat3.jpg" alt="Pulses">
+        </a>
+            <p style="font-size:40px; font-weight:200;">Pulses</p>
+        </div>
+        <a href="product.html">
+        <div class="item">
+            <img src="urea.jpg" alt="AgriTools"> </a>
+            <p style="font-size:40px; font-weight:200;">fertilizers</p>
+        </div>
+    </div>
+    <div  id="y">
+        <h2 style="font-size: 50px;">Customer Reviews</h2>
+        <div class="review">
+            <img src="customer1.jpg" alt="John Doe" class="customer-image">
+            <div class="customer-info">
+                <p class="customer-name">John Doe</p>
+                <p class="rating">★★★★★</p>
+                <p>Great service and fast delivery. Highly recommended!</p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="custom2.jpg" alt="Jane Smith" class="customer-image">
+            <div class="customer-info">
+                <p class="customer-name">Jane Smith</p>
+                <p class="rating">★★★★☆</p>
+                <p>Good quality product, but delivery was a bit late.</p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="cus4.jpg" alt="Mike Johnson" class="customer-image">
+            <div class="customer-info">
+                <p class="customer-name">Mike Johnson</p>
+                <p class="rating">★★★★★</p>
+                <p>Excellent customer support. Very satisfied with my purchase!</p>
+            </div>
+        </div>
+    </div>
+    
+  <section id="order" class="order">
+    <div class="container">
+      <h2>Place Your Order</h2>
+      <p>To place an order, call or WhatsApp us at <strong>+91-9392574349</strong> or visit your nearest NaturoFert center.</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Information</h2>
+      <p>Email: support@naturofert.in</p>
+      <p>Address: kandlakoya,medchal District,telangana,India</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NaturoFert. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+      const ima=document.getElementById('image1');
+        const random=["backpic.png","logo21.png","logo22.png","logo23.png","logo24.png"];
+        setInterval(function(){const length=Math.floor(Math.random()*random.length);
+        ima.src=random[length];},1000);
+  </script>
+</body>
+</html>

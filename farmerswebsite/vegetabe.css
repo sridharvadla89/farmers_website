@@ -1,0 +1,195 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    max-width: 100vw;
+}
+body{
+    background-color: rgb(226, 235, 238);
+}
+.nav-bar{
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-evenly;
+    background-color: #1b2430;
+    padding-bottom: 25px;
+}
+.nav-bar .profile button{
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 19px;
+    background-color: #1b2430;
+
+}
+.nav-bar .nav-ele button:hover{
+    background-color:  #1b2430;
+    border: 2px green ;
+    color:  #17cf97;
+}
+.nav-bar .profile a{
+    text-decoration: none;
+    color: #17cf97;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #1b2430;
+}
+.favicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.favicon img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.favicon .branding{
+    font-family: 'Roboto', sans-serif; /* Set your font family */
+    font-size: 25px;
+    font-weight: 900;
+    border: none;
+    background-color: #1b2430;
+    color: #17cf97;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-ele{
+    width: 600px;
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+input{
+    width: 200px;
+    height: 40px;
+}
+.search button{
+    height: 46px;
+    width: 30px;
+    background-color: #ddd;
+}
+.nav-ele button{
+    width: 200px;
+    height: 50px;
+    background-color: #1b2430;
+    border:none;
+    color: #ddd;
+    border-radius: 19px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav-ele button a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+.nav-ele button a:hover{
+    color: #17cf97;
+}
+.nav-ele button a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+
+}
+.nav-ele button a:hover::after{
+    width: 100%;
+    color: #17cf97;
+}
+.categories-container{
+    gap: 1rem;
+    margin-top:2rem;
+}
+.categories-container .box{
+    padding: 10px;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 1px 4px rgba(0,0,0,0.2);
+}
+.categories-container .box img{
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+.categories-container .box:hover{
+    width: 350px;
+    height: 370px;
+    transition: 1s;
+}
+.categories-container.box h2{
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+.categories-container .box h3{
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0.2rem 0 0.5rem;
+    color: #f0803c;
+}
+.categories-container .box .btn{
+    display:flex;
+    justify-content: center;
+    background-color: #474fa0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin: 3px;
+}
+.categories-container .box .btn:hover{
+    background: #f0803c;
+}
+.categories-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.item img{
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ss{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.categories-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.input{
+    width: 250px;
+    height: 35px;
+    color: black;
+    margin-top: 14px;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    margin-left: 30px;
+    
+}

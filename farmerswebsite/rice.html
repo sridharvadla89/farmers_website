@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Information</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showRice() {
+            document.getElementById("rice-list").style.display = "block";
+            document.getElementById("pulse-list").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <strong style="font-size: 80px; text-align: center; display: block;">Rice</strong>
+    <hr>
+    
+    <div class="categories-container">
+        <div class="item" onclick="showRice()" style="cursor: pointer;">
+            <img src="rice.jpg" alt="Rice" title="Rice">
+            <p style="font-size:40px; font-weight:200;">Rice</p>
+        </div>
+    </div>
+    
+    <div id="rice-list" style="display: none; margin-top: 20px;">
+        <h2>Rice Information</h2>
+        <div class="rice-item">
+            <img src="basmatirice.jpg" alt="Basmati Rice">
+            <h3>Basmati Rice</h3>
+            <p>Basmati rice is known for its aromatic fragrance and its rate is :200rs/kg.</p>
+        </div>
+        <div class="rice-item">
+            <img src="brownrice.jpg" alt="Brown Rice">
+            <h3>Brown Rice</h3>
+            <p>Brown rice is a whole grain that retains its bran and germ layers, making it rich in fiber. its rate is :230rs/kg</p>
+        </div>
+        <div class="rice-item">
+            <img src="basmatirice.jpg" alt="Japonica Rice">
+            <h3>Japonica Rice</h3>
+            <p>Japonica rice has short, round grains and is commonly used in sushi and sticky rice dishes.</p>
+        </div>
+        <div class="rice-item">
+            <img src="wildrice.jpg" alt="Wild Rice">
+            <h3>Wild Rice</h3>
+            <p>Wild rice is a nutrient-dense grain high in protein, fiber, and antioxidants.</p>
+        </div>
+    </div>
+</body>
+</html>

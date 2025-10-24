@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroFert - Fertilizers for Farmers</title>
+  
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.hero {
+  /* background: url('https://images.unsplash.com/photo-1581508519444-dbb7f5d0fa92') no-repeat center center/cover; */
+   background: url('happy farmer background.jpg') no-repeat center center/cover;
+ 
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero p{
+  background-color: #0c0000;
+  background-size:cover;
+  box-sizing: border-box;
+}
+
+.btn {
+  background: #66bb6a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #388e3c;
+}
+
+
+.products {
+  background: #fff;
+  padding: 60px 0;
+}
+.products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.product {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.product h3 {
+  margin-bottom: 10px;
+}
+
+
+.order {
+  background: #f1f8e9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+.contact {
+  background: #fffde7;
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}.nav-bar{
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-evenly;
+    background-color: #1b2430;
+    padding-bottom: 25px;
+}
+.nav-bar .profile button{
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 19px;
+    background-color: #1b2430;
+
+}
+.nav-bar .nav-ele button:hover{
+    background-color:  #1b2430;
+    border: 2px green ;
+    color:  #17cf97;
+}
+.nav-bar .profile a{
+    text-decoration: none;
+    color: #17cf97;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #1b2430;
+}
+.favicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.favicon img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.nav-ele{
+    width: 600px;
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+input{
+    width: 200px;
+    height: 40px;
+}
+.search button{
+    height: 46px;
+    width: 30px;
+    background-color: #ddd;
+}
+.nav-ele button{
+    width: 200px;
+    height: 50px;
+    background-color: #1b2430;
+    border:none;
+    color: #ddd;
+    border-radius: 19px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav-ele button a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+.nav-ele button a:hover{
+    color: #17cf97;
+}
+.nav-ele button a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #17cf97;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+
+}
+.nav-ele button a:hover::after{
+    width: 100%;
+    color: #17cf97;
+}
+/* .profile a{
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+} */
+.nav-ele button{
+    width: 200px;
+    height: 50px;
+    background-color: #1b2430;
+    border:none;
+    color: #ddd;
+    border-radius: 19px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 20px;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+        <a href="#" class="favicon" style="text-decoration: none;"><img src="logo.jpg"> <button style="font-size: 25px;font-weight: 900; border: none;background-color: #1b2430;text-decoration: none; color: #17cf97;cursor: pointer;">AgriLow</button></a>
+        <div class="nav-ele">
+            <button><a href="index.html">Home</a></button>
+            <button><a href="#">News</a></button>
+            <button><a href="#y">Reviews</a></button>
+            <button><a href="#">Expenses</a></button>
+        </div>
+        <div class="search"><input class="input"placeholder="Enter the product details" ><i class="fa fa-search"></i></div>
+        <div class="profile"><button><a href="login.html">login</a></button></div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+        <img src="happy farmer background.jpg" alt="Helping Farmers Grow Better Crops" width="auto" height="auto">
+     
+      <p>Buy quality fertilizers directly from us. Fast delivery. Affordable rates.</p>
+      <a href="#products" class="btn" style="align-items: center;">View Products</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Fertilizer Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <h3>Urea</h3>
+          <img src="urea.jpg" alt ="urea" height="300px" width="200px">
+          <p>High in nitrogen - best for leafy vegetables and grains.</p>
+          <span>Price: ₹300 / 50kg bag</span>
+        </div>
+        <div class="product">
+          <h3>NPK 20-20-20</h3>
+          <img src="npk.jpg" alt="NPK" height="300px" width="200px">
+          <p>Balanced nutrients - ideal for fruiting crops and flowers.</p>
+          <span>Price: ₹550 / 50kg bag</span>
+        </div>
+        <div class="product">
+          <h3>Organic Compost</h3>
+          <img src="organicmanure.jpg" alt="organic manure" height="300px" width="200px">
+          <p>100% natural - improves soil fertility and health.</p>
+          <span>Price: ₹200 / 50kg bag</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="order">
+    <div class="container">
+      <h2>Place Your Order</h2>
+      <p>To place an order, call or WhatsApp us at <strong>+91-9392574349</strong> or visit your nearest NaturoFert center.</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Information</h2>
+      <p>Email: support@naturofert.in</p>
+      <p>Address: kandlakoya,medchal District,telangana,India</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NaturoFert. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

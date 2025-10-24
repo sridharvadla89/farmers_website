@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Farmer Product Purchase Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f9f4;
+        padding: 20px;
+      }
+
+      .form-container {
+        max-width: 500px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        margin: auto;
+      }
+
+      h2 {
+        text-align: center;
+        color: green;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background: darkgreen;
+      }
+    </style>
+    <script> 
+    </script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Farmer Details - Product Purchase</h2>
+      <form action="/submit-form" method="post">
+        <label for="name">Farmer Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="contact">Contact Number</label>
+        <input
+          type="tel"
+          id="contact"
+          name="contact"
+          pattern="[0-9]{10}"
+          placeholder="10-digit mobile number"
+          required
+        />
+
+        <label for="village">Village / Town</label>
+        <input type="text" id="village" name="village" required />
+
+        <label for="product">Product to Buy</label>
+        <select id="product" name="product" required>
+          <option value="">-- Select Product --</option>
+          <option value="seeds">Seeds</option>
+          <option value="fertilizer">Fertilizer</option>
+          <option value="tools">Tools</option>
+          <option value="pesticides">Pesticides</option>
+          <option value="others">Others</option>
+        </select>
+
+        <label for="quantity">Quantity Required</label>
+        <input
+          type="text"
+          id="quantity"
+          name="quantity"
+          placeholder="e.g. 10 kg, 5 liters"
+          required
+        />
+
+        <label for="notes">Additional Notes (Optional)</label>
+        <textarea id="notes" name="notes" rows="3"></textarea>
+
+        <button type="submit"  ><a href="index.html" style="text-decoration: none;">submit</a></button>
+      </form>
+    </div>
+  </body>
+</html>

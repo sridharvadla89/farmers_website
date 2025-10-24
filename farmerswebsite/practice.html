@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="logo.jpg" alt="eyyeey" id="image1">
+    <script>
+        const ima=document.getElementById('image1');
+        const random=["logo.jpg","loan.jpg"];
+        setInterval(function(){const length=Math.floor(Math.random()*random.length);
+        ima.src=random[length];},1000);
+        
+    </script>
+</body>
+</html>
